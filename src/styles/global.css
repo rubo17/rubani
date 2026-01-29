@@ -1,1 +1,10 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #030014;
+  --color-morado-oscuro: #5c1fc4;
+  --color-morado-claro: #905aed;
+  --color-accent-text: #bb9cff;
+  --color-blanco: #ffffff;
+  --color-secondary-text: #928fa1;
+}
