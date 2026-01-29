@@ -1,0 +1,32 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = "Rubani",
+	description = "Transformamos ideas en software personalizazo."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="relative min-h-screen bg-gradient-to-b from-primary-purple to-background-dark text-text-white antialiased">
+		<div class="pointer-events-none fixed inset-0 z-10">
+			<div class="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black/60 to-transparent"></div>
+			<div class="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/60 to-transparent"></div>
+		</div>
+		<div class="relative z-20">
+			<slot />
+		</div>
+	</body>
+</html>
