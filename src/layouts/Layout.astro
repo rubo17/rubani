@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+
 interface Props {
 	title?: string;
 	description?: string;
@@ -11,7 +13,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="bg-background-dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,8 +27,9 @@ const {
 			<div class="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black/60 to-transparent"></div>
 			<div class="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/60 to-transparent"></div>
 		</div>
-		<div class="relative z-20">
+		<main>
 			<slot />
-		</div>
+		</main>
+		<Footer />
 	</body>
 </html>

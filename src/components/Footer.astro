@@ -1,0 +1,39 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-text-gray/20 mt-20">
+	<div class="mx-auto max-w-5xl px-6 py-12">
+		<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+			<div class="text-center md:text-left">
+				<a href="/" class="text-2xl font-bold text-text-white hover:text-accent-purple transition-colors">
+					Rubani
+				</a>
+				<p class="text-text-gray text-sm mt-2">
+					Transformamos ideas en software
+				</p>
+			</div>
+
+			<nav class="flex flex-wrap justify-center gap-6">
+				<a href="#servicios" class="text-text-gray hover:text-text-white transition-colors">
+					Servicios
+				</a>
+				<a href="#proyectos" class="text-text-gray hover:text-text-white transition-colors">
+					Proyectos
+				</a>
+				<a href="#nosotros" class="text-text-gray hover:text-text-white transition-colors">
+					Nosotros
+				</a>
+				<a href="#contacto" class="text-text-gray hover:text-text-white transition-colors">
+					Contacto
+				</a>
+			</nav>
+		</div>
+
+		<div class="border-t border-text-gray/20 mt-8 pt-8 text-center">
+			<p class="text-text-gray text-sm">
+				© {year} Rubani. Todos los derechos reservados.
+			</p>
+		</div>
+	</div>
+</footer>
